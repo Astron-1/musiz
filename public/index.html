@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Musiz</title>
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="*" referrerpolicy="no-referrer" />
+     <script type="module" src="/songs/gettingFile.js"  defer></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js" integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ==" crossorigin="*" referrerpolicy="no-referrer"></script>
+     <script type="module" src="script.js" defer></script>
+     <!-- <script type="module" src="/songs/api.js" defer></script> -->
+</head>
+<body>
+     <div class="container">
+          <div class="music-player">
+               <nav>
+                    <label for="myfile">
+                    <div class="circle">
+                         <!-- <i class="fa-solid fa-angle-left"></i> -->
+                                   <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                   <input type="file" id="myfile" name="myfile" multiple  accept="audio/*"  >
+                              </div>
+                         </label>
+                    <!-- <div class="circle">
+                         <i class="fa-solid fa-bars" id="menu"></i>
+                    </div> -->
+               </nav>
+              
+               
+               <img src="images/alien-g905f4dc1b_1920.png" alt="" class="song-img" id="songImg">
+               <h1 id="song-tittle">Song Tittle</h1>
+               <p id="artist-name">Artist Name</p>
+               <p id="year">Year</p>
+
+               <audio  id="song">
+
+                    <source src="" type="audio/mpeg" >
+
+               </audio>
+
+               <div class="duration">
+                    <p id="start">0:00</p>
+                    <p id="end">0:00</p>
+               </div>
+               <input type="range" name="" id="progress" value="0">
+
+               <div class="controls">
+                         <div id="playPrevious"><i class="fa-solid fa-backward"></i></div>
+                         <div id="jumpBackwardTime"><i class="fa-solid fa-rotate-left"></i></div> 
+                         <div id="ctrlPlay"><i class="fa-solid fa-play" id="controlIcon"></i></div>
+                         <div id="jumpForwardTime"><i class="fa-solid fa-rotate-right">
+                         </i></div> 
+                         <div id="playNext"><i class="fa-solid fa-forward"></i></div>
+               </div>
+          </div>
+     </div>
+    
+</body>
+</html>
